@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="qq.max.progressbar">
+
+        <attr name="barColor" format="color" />
+        <attr name="primaryProgressColor" format="color" />
+        <attr name="secondaryProgressColor" format="color" />
+        <attr name="thumbFillColor" format="color" />
+        <attr name="thumbStrokeColor" format="color" />
+
+        <attr name="minProgressValue" format="float" />
+        <attr name="maxProgressValue" format="float" />
+        <attr name="thumbSnapValue" format="float" />
+        <attr name="primaryProgressValue" format="float" />
+        <attr name="secondaryProgressValue" format="float" />
+        <attr name="thumbSize" format="dimension"/>
+        <attr name="thumbBorderSize" format="dimension"/>
+
+        <!-- This is a percentage-->
+        <attr name="seekTolerance" format="float"/>
+
+    </declare-styleable>
+</resources>

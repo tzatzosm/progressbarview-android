@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="qq.max.progressbar.warning.thumb.size.exceeds.max.size">
+        Thumb size exceeds max thumb size (height - paddingTop - paddingBot) which is %d pixels.
+    </string>
+</resources>
