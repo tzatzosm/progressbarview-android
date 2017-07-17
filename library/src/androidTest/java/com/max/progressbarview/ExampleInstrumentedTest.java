@@ -1,4 +1,4 @@
-package qq.max.progressbar;
+package com.max.progressbarview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
