@@ -1,4 +1,4 @@
-package qq.max.progressbar.sample;
+package com.max.progressbarview.sample;
 
 import org.junit.Test;
 
