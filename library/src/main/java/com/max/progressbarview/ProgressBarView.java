@@ -1,4 +1,4 @@
-package qq.max.progressbar;
+package com.max.progressbarview;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -13,6 +13,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.max.progressbarview.R;
 
 /**
  * Created by marseltzatzo on 01/07/2017.

@@ -11,7 +11,7 @@ import android.widget.Button;
 
 import java.util.Random;
 
-import qq.max.progressbar.ProgressBarView;
+import com.max.progressbarview.ProgressBarView;
 
 public class MainActivity extends AppCompatActivity {
 

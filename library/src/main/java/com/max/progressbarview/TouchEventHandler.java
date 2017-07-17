@@ -1,4 +1,4 @@
-package qq.max.progressbar;
+package com.max.progressbarview;
 
 import android.view.MotionEvent;
 
