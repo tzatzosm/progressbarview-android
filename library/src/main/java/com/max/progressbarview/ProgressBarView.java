@@ -326,9 +326,7 @@ public class ProgressBarView extends View {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN: {
                 onStartTrackingTouch();
-                if (thumbRect.contains(lastX, lastY)) {
-                    invalidate();
-                }
+                invalidate();
                 break;
             }
             case MotionEvent.ACTION_MOVE: {
