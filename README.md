@@ -101,8 +101,3 @@ options are provided.
         
     thumbStrokeColor
         Defines the border color ot the thumb
-
-
-```
-
-```
