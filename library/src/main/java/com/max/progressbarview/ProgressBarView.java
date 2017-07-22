@@ -157,8 +157,8 @@ public class ProgressBarView extends View {
         return thumbSize;
     }
 
-    public int getThumbBorderSize() {
-        return thumbBorderSize;
+    public float getThumbBorderSize() {
+        return this.thumbStrokePaint.getStrokeWidth();
     }
 
     //endregion
@@ -202,10 +202,10 @@ public class ProgressBarView extends View {
     }
 
     /**
-     * @param thumbBorderSize in pixels.
+     * @param thumbStrokeWidth
      */
-    public void setThumbBorderSize(int thumbBorderSize) {
-        this.thumbBorderSize = thumbBorderSize;
+    public void setThumbBorderSize(float thumbStrokeWidth) {
+        this.thumbStrokePaint.setStrokeWidth(thumbStrokeWidth);
         invalidate();
     }
 
@@ -302,6 +302,7 @@ public class ProgressBarView extends View {
         canvas.drawRect(barRect, barPaint);
         canvas.drawRect(secondaryProgressRect, secondaryProgressPaint);
         canvas.drawRect(primaryProgressRect, primaryProgressPaint);
+        canvas.drawOval(thumbRect, thumbStrokePaint);
         canvas.drawOval(thumbRect, thumbFillPaint);
     }
 
@@ -367,7 +368,7 @@ public class ProgressBarView extends View {
         this.primaryProgressPaint = createPaint(Paint.Style.FILL);
         this.secondaryProgressPaint = createPaint(Paint.Style.FILL);
         this.thumbFillPaint = createPaint(Paint.Style.FILL);
-        this.thumbStrokePaint = createPaint(Paint.Style.FILL);
+        this.thumbStrokePaint = createPaint(Paint.Style.STROKE);
         this.touchEventHandler = new TouchEventHandler(this);
     }
 
@@ -401,6 +402,9 @@ public class ProgressBarView extends View {
         ));
         setThumbSize(
                 getResources().getDimensionPixelSize(R.dimen.max_progress_bar_thumb_size)
+        );
+        setThumbBorderSize(
+                getResources().getDimensionPixelSize(R.dimen.max_progress_bar_thumb_border_size)
         );
         setThumbFillColor(ContextCompat.getColor(
                 context,
