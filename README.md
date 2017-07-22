@@ -20,6 +20,8 @@ Add the following to your dependencies.
 
 ## Usage
 
+### Instantiation
+
 You can either define the library in your xml resources
 
 ```xml
@@ -44,4 +46,63 @@ or instantiate it via code
 
     ProgressBarView progressBarView = new ProgressBarView(this);
     progressBarView.setLayoutParams(progressBarParams); 
+```
+
+### Events 
+
+This ui component provides 3 events:
+
+    onProgressChanged(ProgressBarView progressBarView, float progress, boolean fromUser)
+        Fires when progress changes either programmatically or by the user.
+        
+    onTouchStart(ProgressBarView progressBarView)
+        Fires when user starts interacting with the view.
+        
+    onTouchEnd(ProgressBarView progressBarView)
+        Fires when the user stops interacting with the view.
+
+Set the listener
+         
+```
+    progressBarView.setOnProgressChangedListener(new ProgressBarView.OnProgressChangedListener() {
+        @Override
+        public void onProgressChanged(ProgressBarView progressBarView, float progress, boolean fromUser) {
+            Log.d(TAG, String.format("onProgressChanged %f, %b", progress, fromUser));
+        }
+
+        @Override
+        public void onTouchStart(ProgressBarView progressBarView) {
+            Log.d(TAG, "onTouchStart");
+        }
+
+        @Override
+        public void onTouchEnd(ProgressBarView progressBarView) {
+            Log.d(TAG, "onTouchEnd");
+        }
+    });
+```
+
+### Customization
+
+You can customize the view either directly by xml or via code. Currently the following customization
+options are provided.
+
+    barColor
+        Defines the color of the bar 
+    
+    primaryProgressColor
+        Defines the color of the primary progress bar
+    
+    secondaryProgressColor
+        Defines the color of the secondary progress bar
+        
+    thumbFillColor
+        Defines the fill color ot the thumb
+        
+    thumbStrokeColor
+        Defines the border color ot the thumb
+
+
+```
+
 ```
