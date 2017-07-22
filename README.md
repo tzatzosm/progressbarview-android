@@ -23,12 +23,16 @@ Add the following to your dependencies.
 You can either define the library in your xml resources
 
 ```xml
-
     <com.max.progressbarview.ProgressBarView
             android:id="@+id/progressView"
             android:layout_width="wrap_content"
             android:layout_height="50dp"/>
+```
 
+And in your activity
+
+```
+    ProgressBarView progressBarView = (ProgressBarView) findViewById(R.id.progressBarView);
 ```
 
 or instantiate it via code
