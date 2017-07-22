@@ -22,9 +22,9 @@
         app:maxProgressValue="100"
         app:primaryProgressValue="50"
         app:secondaryProgressValue="70"
-        app:thumbSnapValue="0"
+        app:thumbSnapValue="3"
         app:thumbSize="60dp"
-        app:thumbFillColor="#3300DD00"/>
+        app:thumbFillColor="#330000"/>
 
     <Button
         android:id="@+id/button"
@@ -33,5 +33,17 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="Button" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="80dp"
+        android:layout_alignRight="@+id/progressView"
+        android:layout_alignEnd="@+id/progressView"
+        android:layout_alignLeft="@+id/progressView"
+        android:layout_alignStart="@+id/progressView" />
 
 </RelativeLayout>
