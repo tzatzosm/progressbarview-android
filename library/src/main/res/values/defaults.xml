@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="max_progress_bar_bar_default_color">#000</color>
-    <color name="max_progress_bar_primary_progress_default_color">#06A</color>
-    <color name="max_progress_bar_secondary_progress_default_color">#EEE</color>
-    <color name="max_progress_bar_thumb_stroke_default_color">#D500</color>
-    <color name="max_progress_bar_thumb_fill_default_color">#AAD50000</color>
+    <color name="max_progress_bar_bar_default_color">#757575</color>
+    <color name="max_progress_bar_primary_progress_default_color">#FFEB3B</color>
+    <color name="max_progress_bar_secondary_progress_default_color">#BDBDBD</color>
+    <color name="max_progress_bar_thumb_stroke_default_color">#00796B</color>
+    <color name="max_progress_bar_thumb_fill_default_color">#B2DFDB</color>
 
     <dimen name="max_progress_bar_thumb_size">20dp</dimen>
     <dimen name="max_progress_bar_thumb_border_size">3dp</dimen>
